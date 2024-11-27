@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p ,span, h1, h2, h3, h4, h5, h6, label {
+  @apply !text-zinc-900
+}
+
+.dark {
+  p ,span, h1, h2, h3, h4, h5, h6, label {
+    @apply !text-white
+  } 
+}
+
+.recharts-default-tooltip{
+  @apply !bg-content1 rounded-md;
+
+  p ,span, h1, h2, h3, h4, h5, h6, label {
+    @apply !text-zinc-900
+  }
+}
+
+.dark {
+  .recharts-default-tooltip{
+    @apply !bg-content1;
+
+    p ,span, h1, h2, h3, h4, h5, h6, label {
+      @apply !text-white
+    } 
+  }
+}
